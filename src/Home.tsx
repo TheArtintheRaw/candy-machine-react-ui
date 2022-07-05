@@ -19,7 +19,7 @@ import { AlertState } from './utils';
 import { Header } from './Header';
 import { MintButton } from './MintButton';
 import { GatewayProvider } from '@civic/solana-gateway-react';
-import { CrossmintPayButton } from '@crossmint/client-sdk-react-ui';
+import ContainedButtons from './crossmints';
 
 const ConnectButton = styled(WalletDialogButton)`
     width: 100%;
@@ -214,15 +214,7 @@ const Home = (props: HomeProps) => {
                             </MintContainer>
                         </>
                     )}
-                    {process.env.REACT_APP_CROSSMINT_ID && (
-                        <CrossmintPayButton
-                            collectionTitle='alotta sol'
-                            collectionDescription='alotta sol give aways'
-                            collectionPhoto='https://ipfs.io/ipfs/QmSuFY1uK4SCAq3mvRFYfY7TrZaJfboWFxVExpXgdCQcwR'
-                            clientId='494ca877-bec2-45f8-8197-1b66b0a67d94'
-                            mintConfig={{ type: 'candy-machine' }}
-                        />
-                    )}
+                    {process.env.REACT_APP_CROSSMINT_ID && <ContainedButtons />}
                 </Paper>
             </Container>
 
@@ -241,5 +233,4 @@ const Home = (props: HomeProps) => {
         </Container>
     );
 };
-
 export default Home;
