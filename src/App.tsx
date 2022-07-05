@@ -18,8 +18,9 @@ import {
   WalletProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-
+import Button from "@material-ui/core/button";
 import { ThemeProvider, createTheme } from "@material-ui/core";
+
 
 const theme = createTheme({
   palette: {
@@ -53,6 +54,8 @@ const txTimeoutInMilliseconds = 30000;
 const App = () => {
   const endpoint = useMemo(() => clusterApiUrl(network), []);
 
+
+
   const wallets = useMemo(
     () => [
       getPhantomWallet(),
@@ -69,6 +72,9 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletDialogProvider>
+          <Button variant="contained" href="https://alottasol.com">
+  Home
+</Button>
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
