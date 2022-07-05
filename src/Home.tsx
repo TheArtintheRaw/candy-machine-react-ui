@@ -215,13 +215,12 @@ const Home = (props: HomeProps) => {
           )}
           {process.env.REACT_APP_CROSSMINT_ID && (
             <CrossmintPayButton
-                style={{ margin: "0 auto", width: "100%" }}
-                collectionTitle="<TITLE_FOR_YOUR_COLLECTION>"
-                collectionDescription="<DESCRIPTION_OF_YOUR_COLLECTION>"
-                collectionPhoto="<OPT_URL_TO_PHOTO_COVER>"
-                clientId={process.env.REACT_APP_CROSSMINT_ID}
-                environment={process.env.REACT_APP_SOLANA_NETWORK === "devnet" && process.env.REACT_APP_SOLANA_RPC_HOST === "https://api.devnet.solana.com" ? "staging" : ""}
-            />
+            collectionTitle="alotta sol"
+            collectionDescription="alotta sol give aways"
+            collectionPhoto="https://ipfs.io/ipfs/QmSuFY1uK4SCAq3mvRFYfY7TrZaJfboWFxVExpXgdCQcwR"
+            clientId="494ca877-bec2-45f8-8197-1b66b0a67d94"
+            mintConfig={{"type":"candy-machine"}}
+        />
           )}
         </Paper>
       </Container>
