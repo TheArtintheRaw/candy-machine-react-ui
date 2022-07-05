@@ -18,7 +18,7 @@ import {
   WalletProvider,
 } from "@solana/wallet-adapter-react";
 import { WalletDialogProvider } from "@solana/wallet-adapter-material-ui";
-import Button from "@material-ui/core/button";
+import Button from "./Buttons";
 import { ThemeProvider, createTheme } from "@material-ui/core";
 
 
@@ -72,9 +72,7 @@ const App = () => {
       <ConnectionProvider endpoint={endpoint}>
         <WalletProvider wallets={wallets} autoConnect>
           <WalletDialogProvider>
-          <Button variant="contained" href="https://alottasol.com">
-  Home
-</Button>
+          <Button />
             <Home
               candyMachineId={candyMachineId}
               connection={connection}
