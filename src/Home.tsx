@@ -40,6 +40,7 @@ export interface HomeProps {
     startDate: number;
     txTimeout: number;
     rpcHost: string;
+    error?: string;
 }
 
 const Home = (props: HomeProps) => {
