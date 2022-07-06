@@ -5,19 +5,19 @@ export default function ContainedButtons() {
     return (
         <Stack direction='row' spacing={2}>
             <CrossmintPayButton
-                collectionTitle='alotta sol'
-                collectionDescription='alotta sol give aways'
-                collectionPhoto='https://ipfs.io/ipfs/QmSuFY1uK4SCAq3mvRFYfY7TrZaJfboWFxVExpXgdCQcwR'
-                clientId='494ca877-bec2-45f8-8197-1b66b0a67d94'
+                collectionTitle='AlottaSolGiveaways'
+                collectionDescription='AlottaSolGiveaways'
+                collectionPhoto='https://ipfs.io/ipfs/QmavDFXphG8smFhCmCGP6rdmsaZ7iApMDH7siKNCqZeNU1?filename=0.png'
+                clientId='ae4210a1-d0b0-44ab-8792-0be421f90743'
                 mintConfig={{ type: 'candy-machine' }}
                 paymentMethod='ETH'>
                 ETH
             </CrossmintPayButton>
             <CrossmintPayButton
-                collectionTitle='alotta sol'
-                collectionDescription='alotta sol give aways'
-                collectionPhoto='https://ipfs.io/ipfs/QmSuFY1uK4SCAq3mvRFYfY7TrZaJfboWFxVExpXgdCQcwR'
-                clientId='494ca877-bec2-45f8-8197-1b66b0a67d94'
+                collectionTitle='AlottaSolGiveaways'
+                collectionDescription='AlottaSolGiveaways'
+                collectionPhoto='https://ipfs.io/ipfs/QmavDFXphG8smFhCmCGP6rdmsaZ7iApMDH7siKNCqZeNU1?filename=0.png'
+                clientId='ae4210a1-d0b0-44ab-8792-0be421f90743'
                 mintConfig={{ type: 'candy-machine' }}>
                 USD
             </CrossmintPayButton>
